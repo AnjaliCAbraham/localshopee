@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Login | Local Shopee</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head><!--/head-->
+
+<body>
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href=""><i class="fa fa-phone"></i> +91 8289982311</a></li>
+								<li><a href=""><i class="fa fa-envelope"></i> info@localshopee.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 clearfix">
+						<div class="logo pull-left">
+							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+	
+	<section><!--form-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-1">
+					<div class="login-form"><!--login form-->
+						<h1>Login</h1>
+						<form action="login.php" method="post" onsubmit="return validateForm();">
+							<input type="text" id="uname" name="uname" placeholder="Enter email address" />
+							<p id="res1"></p> 
+							<input type="password" id="pswd" name="pswd"  placeholder="Password" />
+							<p id="res2"></p> 
+							<span>
+								<a href="forget.html">Forget Password /</a>
+									<a href="registration.html">New registration</a>
+							</span>
+							<button type="submit" id="login" class="btn btn-default">Login</button>
+							
+						</form>
+					</div><!--/login form-->
+				</div>
+			</div>	
+		</div>
+	</section><!--/form-->
+	
+	<footer id="footer"  style="margin-top:50px"><!--Footer-->
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="companyinfo">
+							<h2><span>Local</span>Shopee</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>About</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">About Us</a></li>
+								<li><a href="">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Categories</h2>
+							<ul class="nav nav-pills nav-stacked">
+							    <li><a href="Appliances.php">Appliances</a></li>
+							    <li><a href="Beauty.php">Beauty</a></li>
+								<li><a href="Electronics.php">Electronics</a></li>
+								<li><a href="Furniture.php">Furniture</a></li>
+								<li><a href="Grocery.php">Grocery</a></li>
+								<li><a href="Mobile.php">Mobiles</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">Terms of Use</a></li>
+								<li><a href="">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Social</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">Facebook</a></li>
+								<li><a href="">Twitter</a></li>
+								
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left"> © 2021 Local Shopee Inc. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+	
+	<script type="text/javascript"> 
+
+		$(function() {
+	
+	$("#res1").hide();
+	$("#res2").hide();
+	
+
+	var error_email = false;
+	var error_pass= false;
+	
+	
+	$("#uname").focusout(function() {
+	   check_email();
+	});
+	$("#pswd").focusout(function() {
+	   check_pass();
+	});
+	
+	function check_email() {
+	   var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	   var email = $("#uname").val();
+	   if (email == '') {
+		  $("#res1").show();
+		  $("#res1").html("Please Enter Email");
+		  $("#uname").css("border","3px solid #F90A0A");
+		  error_email= false;
+	   }
+	   else if (!pattern.test(email) ) {
+		  $("#res1").show();
+		  $("#res1").html("Invalid Email");
+		  $("#uname").css("border","3px solid #F90A0A");
+		  error_email= false;
+	   } else {
+		  $("#res1").hide();
+		  $("#uname").css("border","3px solid green");
+		  
+	   }
+	}
+	function check_pass() {
+	   var password_length = $("#pswd").val().length;
+	   var pass= $("#pswd").val();
+	   if (pass== '') {
+		  $("#res2").show();
+		  $("#res2").html("Please Enter Password");
+		  $("#pswd").css("border","3px solid #F90A0A");
+		  error_pass = false;
+	   }
+	   else if (password_length < 8) {
+		  $("#res2").html("Atleast 8 Characters");
+		  $("#res2").show();
+		  $("#pswd").css("border","3px solid #F90A0A");
+		  error_pass = false;
+	   } else {
+		  $("#res2").hide();
+		  $("#pswd").css("border","3px solid green");
+		  
+	   }
+	}
+	
+	
+	
+	$("#form").submit(function() {
+	  
+	
+	error_email = false;
+	error_pass= true;
+
+	   
+	   check_email();
+	   check_pass();
+	
+	});
+	});
+	
+		</script> 
+		
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

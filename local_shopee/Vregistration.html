@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Registration | Local Shopee</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+
+	</script>
+</head><!--/head-->
+
+<body>
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href=""><i class="fa fa-phone"></i> +91 8289982311</a></li>
+								<li><a href=""><i class="fa fa-envelope"></i> info@localshopee.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 clearfix">
+						<div class="logo pull-left">
+							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+	
+	<section><!--form-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="signup-form"><!--sign up form-->
+						<h1>New Registration </h1>
+						<form action="Vregistration.php" method="post" onsubmit="return registration();">
+							<input type="text" id="Name" name="Name" placeholder="Name"/>
+							<p id="res3"></p> 
+							<input type="text" id="Address"  name="Address" placeholder="Address"/>
+							<p id="res4"></p>
+							<input type="text" id="Houseno" name="Houseno" placeholder="Houseno"/>
+							<p id="res5"></p>
+							<input type="text" id="Street" name="Street" placeholder="Street"/>
+							<p id="res6"></p>
+							<input type="text" id="Pincode" name="Pincode" placeholder="Pincode"/>
+							<p id="res7"></p>
+							<input type="text" id="Mobile" name="Mobile" placeholder="Mobile"/>
+							<p id="res8"></p>
+							<input type="email" id="Email" name="Email" placeholder="Email Address"/>
+							<p id="res9"></p>
+							<input type="password" id="Password" name="Password" placeholder="Password"/>
+							<p id="res10"></p>
+							<input type="password" id="CPassword" name="CPassword" placeholder="Confirm Password"/>
+							<p id="res11"></p>
+							<button type="submit" class="btn btn-default">Sign up</button>
+						</form>
+					</div><!--/sign up form-->
+				</div>
+			</div>	
+		</div>
+	</section><!--/form-->
+	
+	
+	<footer id="footer"  style="margin-top:50px"><!--Footer-->
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="companyinfo">
+							<h2><span>Local</span>Shopee</h2>
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>About</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">About Us</a></li>
+								<li><a href="">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Categories</h2>
+							<ul class="nav nav-pills nav-stacked">
+							    <li><a href="Appliances.php">Appliances</a></li>
+							    <li><a href="Beauty.php">Beauty</a></li>
+								<li><a href="Electronics.php">Electronics</a></li>
+								<li><a href="Furniture.php">Furniture</a></li>
+								<li><a href="Grocery.php">Grocery</a></li>
+								<li><a href="Mobile.php">Mobiles</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">Terms of Use</a></li>
+								<li><a href="">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Social</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">Facebook</a></li>
+								<li><a href="">Twitter</a></li>
+								
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2021 Local Shopee Inc. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+	
+    <script type="text/javascript"> 
+
+	$(function() {
+
+$("#res3").hide();
+$("#res4").hide();
+$("#res5").hide();
+$("#res6").hide();
+$("#res7").hide();
+$("#res8").hide();
+$("#res9").hide();
+$("#res10").hide();
+$("#res11").hide();
+
+var error_name = false;
+var error_address = false;
+var error_houseno = false;
+var error_street = false;
+var error_pincode = false;
+var error_mobile = false;
+var error_email = false;
+var error_pass= false;
+var error_cpass= false;
+
+$("#Name").focusout(function(){
+   check_name();
+});
+$("#Address").focusout(function() {
+   check_address();
+});
+$("#Houseno").focusout(function() {
+   check_houseno();
+});
+$("#Street").focusout(function() {
+   check_street();
+});
+$("#Pincode").focusout(function() {
+   check_pincode();
+});
+$("#Mobile").focusout(function() {
+   check_mobile();
+});
+$("#Email").focusout(function() {
+   check_email();
+});
+$("#Password").focusout(function() {
+   check_pass();
+});
+$("#CPassword").focusout(function() {
+   check_cpass();
+});
+
+function check_name() {
+   var pattern = /^[a-zA-Z]*$/;
+   var name = $("#Name").val();
+   if (name == '') {
+	  $("#res3").show();
+	  $("#res3").html("Please Enter Name");
+	  $("#Name").css("border","3px solid #F90A0A");
+	  error_name = false;
+   }
+   else if (!pattern.test(name) ) {
+	  $("#res3").show();
+	  $("#res3").html("Should contain only Characters");
+	  $("#Name").css("border","3px solid #F90A0A");
+	  error_name = false;
+   } else {
+	  $("#res3").hide();
+	  $("#Name").css("border","3px solid green");
+   }
+}
+
+function check_address() {
+   var address = $("#Address").val();
+   var pattern = /^[a-zA-Z]*$/;
+   if (address == '') {
+	  $("#res4").show();
+	  $("#res4").html("Please Enter Address");
+	  $("#Address").css("border","3px solid #F90A0A");
+	  error_address = false;
+   }
+   else if (!pattern.test(address) ) {
+	  $("#res4").show();
+	  $("#res4").html("Should contain only Characters");
+	  $("#Address").css("border","3px solid #F90A0A");
+	  error_address = false;
+   } else {
+	  $("#res4").hide();
+	  $("#Address").css("border","3px solid green");
+   }
+}
+function check_houseno() {
+   var houseno = $("#Houseno").val();
+   var pattern = /^[1-9]\d{1}$/;
+   if (houseno == '') {
+	  $("#res5").show();
+	  $("#res5").html("Please Enter House No");
+	  $("#Houseno").css("border","3px solid #F90A0A");
+	  error_houseno = false;
+   }
+   else if (!pattern.test(houseno) ) {
+	  $("#res5").show();
+	  $("#res5").html("Should contain only Numbers");
+	  $("#Houseno").css("border","3px solid #F90A0A");
+	  error_houseno = false;
+   } else {
+	  $("#res5").hide();
+	  $("#Houseno").css("border","3px solid green");
+   }
+}
+function check_street() {
+   var street = $("#Street").val();
+   if (street == '') {
+	  $("#res6").show();
+	  $("#res6").html("Please Enter Street");
+	  $("#Street").css("border","3px solid #F90A0A");
+	  error_street = false;
+   } else {
+	  $("#res6").hide();
+	  $("#Street").css("border","3px solid green");
+   }
+}
+function check_pincode() {
+   var pincode = $("#Pincode").val();
+   var pattern = /^[1-9]\d{5}$/;
+   if (pincode == '') {
+	  $("#res7").show();
+	  $("#res7").html("Please Enter Pincode");
+	  $("#Pincode").css("border","3px solid #F90A0A");
+	  error_pincode = false;
+   }
+   else if (!pattern.test(pincode) ) {
+	  $("#res7").show();
+	  $("#res7").html("Should contain only Numbers");
+	  $("#Pincode").css("border","3px solid #F90A0A");
+	  error_address = false;
+   } else {
+	  $("#res7").hide();
+	  $("#Pincode").css("border","3px solid green");
+   }
+}
+
+function check_mobile() {
+ var pattern = /^[1-9]\d{9}$/;
+   var phone = $("#Mobile").val();
+   if (phone == '') {
+	  $("#res8").show();
+	  $("#res8").html("Please Enter Phone Number");
+	  $("#Mobile").css("border","3px solid #F90A0A");
+	  error_mobile = false;
+   }
+   else if (!pattern.test(phone) ) {
+	  $("#res8").show();
+	  $("#res8").html("Should Contain 10 Digit");
+	  $("#res8").css("border","3px solid #F90A0A");
+	  error_mobile = false;
+   } else {
+	  $("#res7").hide();
+	  $("#Mobile").css("border","3px solid green");
+	 
+   }
+}
+
+function check_email() {
+   var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+   var email = $("#Email").val();
+   if (email == '') {
+	  $("#res9").show();
+	  $("#res9").html("Please Enter Email");
+	  $("#Email").css("border","3px solid #F90A0A");
+	  error_email= false;
+   }
+   else if (!pattern.test(email) ) {
+	  $("#res9").show();
+	  $("#res9").html("Invalid Email");
+	  $("#Email").css("border","3px solid #F90A0A");
+	  error_email= false;
+   } else {
+	  $("#res9").hide();
+	  $("#Email").css("border","3px solid green");
+	  
+   }
+}
+function check_pass() {
+   var password_length = $("#Password").val().length;
+   var pass= $("#Password").val();
+   if (pass== '') {
+	  $("#res10").show();
+	  $("#res10").html("Please Enter Password");
+	  $("#Password").css("border","3px solid #F90A0A");
+	  error_pass = false;
+   }
+   else if (password_length < 8) {
+	  $("#res10").html("Atleast 8 Characters");
+	  $("#res10").show();
+	  $("#Password").css("border","3px solid #F90A0A");
+	  error_pass = false;
+   } else {
+	  $("#res10").hide();
+	  $("#Password").css("border","3px solid green");
+	  
+   }
+}
+
+function check_cpass() {
+   var pass = $("#Password").val();
+   var cpass = $("#CPassword").val();
+   if (pass =='') {
+	  $("#res11").html("Confirm Your Password");
+	  $("#res11").show();
+	  $("#CPassword").css("border","3px solid #F90A0A");
+	  error_cpass = false;
+	  
+   }
+   else if (pass !== cpass) {
+	  $("#res11").html("Passwords Did not Matched");
+	  $("#res11").show();
+	  $("#res11").css("border","3px solid #F90A0A");
+	  error_cpass = false;
+	  
+   } else {
+	  $("#res11").hide();
+	  $("#CPassword").css("border","3px solid green");            
+		 error_cpass = true;
+   }
+}
+
+$("#form").submit(function() {
+  
+error_name = true;
+error_address = true;
+error_houseno = true;
+error_street = true;
+error_pincode = true;
+error_mobile = true;
+error_email = false;
+error_pass= true;
+error_cpass= true;
+   check_name();
+   check_address();
+   check_houseno();
+   check_street();
+   check_pincode();
+   check_mobile();
+   check_email();
+   check_pass();
+   check_cpass();
+
+});
+});
+	</script> 
+		
+    <script src="js/jquery.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
